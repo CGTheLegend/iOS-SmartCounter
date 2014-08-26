@@ -112,11 +112,8 @@
 		E0DF666819AD217800606BB5 /* SmartCounter */ = {
 			isa = PBXGroup;
 			children = (
-				E0DF667119AD217800606BB5 /* SmartCounterAppDelegate.h */,
-				E0DF667219AD217800606BB5 /* SmartCounterAppDelegate.m */,
 				E0DF667419AD217800606BB5 /* Main.storyboard */,
-				E0DF667719AD217800606BB5 /* SmartCounterViewController.h */,
-				E0DF667819AD217900606BB5 /* SmartCounterViewController.m */,
+				E0DF669719AD218800606BB5 /* ViewController */,
 				E0DF667A19AD217900606BB5 /* Images.xcassets */,
 				E0DF666919AD217800606BB5 /* Supporting Files */,
 			);
@@ -126,6 +123,8 @@
 		E0DF666919AD217800606BB5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E0DF667119AD217800606BB5 /* SmartCounterAppDelegate.h */,
+				E0DF667219AD217800606BB5 /* SmartCounterAppDelegate.m */,
 				E0DF666A19AD217800606BB5 /* SmartCounter-Info.plist */,
 				E0DF666B19AD217800606BB5 /* InfoPlist.strings */,
 				E0DF666E19AD217800606BB5 /* main.m */,
@@ -150,6 +149,15 @@
 				E0DF668A19AD217900606BB5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0DF669719AD218800606BB5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF667719AD217800606BB5 /* SmartCounterViewController.h */,
+				E0DF667819AD217900606BB5 /* SmartCounterViewController.m */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
