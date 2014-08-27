@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SmartCounterViewController : UIViewController
+@interface SmartCounterViewController : UIViewController <UITextFieldDelegate>
 
 @end

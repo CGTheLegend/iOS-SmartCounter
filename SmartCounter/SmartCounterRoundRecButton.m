@@ -10,11 +10,26 @@
 
 @implementation SmartCounterRoundRecButton
 
+- (void)initialize{
+    [self.layer setCornerRadius:10.0f];
+    [self.layer setBorderColor:[UIColor blackColor].CGColor];
+    [self.layer setBorderWidth:1.0];
+//    [self.layer masksToBounds:YES];
+}
+
+- (instancetype)initWithCoder:(NSCoder *)coder{
+    self = [super initWithCoder:coder];
+    if (self) {
+        [self initialize];
+    }
+    return self;
+}
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
+        [self initialize];
     }
     return self;
 }
@@ -24,10 +39,22 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect
 {
-//    [self.layer setCornerRadius:10.0f];
-//    [self.layer setBorderColor:[UIColor blackColor].CGColor];
-//    [self.layer setBorderWidth:1.0];
+   
 }
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    // When the button is pressed the border color chage to 1/2 alpha
+    UIColor *blackColor;
+    UIColor *transBlack = [blackColor colorWithAlphaComponent:(0.5)];
+    [self.layer setBorderColor:transBlack.CGColor];
+    [super touchesBegan:touches withEvent:event];
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
+    // When the button is pressed the border color changes back to black
+    [self.layer setBorderColor:[UIColor blackColor ].CGColor];
+    [super touchesEnded:touches withEvent:event];
+
+}
 
 @end
