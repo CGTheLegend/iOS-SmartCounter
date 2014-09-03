@@ -42,16 +42,20 @@
     return self;
 }
 
-//- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-//    // When the button is pressed the border color chage to 1/2 alpha
-//    UIColor *transBlack = [[UIColor blackColor] colorWithAlphaComponent:0.5f];
-//    [self.layer setBorderColor: transBlack.CGColor];
-//}
-//
-//- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
-//    // When the button is pressed the border color changes back to black
-//    [self.layer setBorderColor:[UIColor blackColor ].CGColor];
-//}
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    // When the button is pressed the border color chage to 1/2 alpha
+    UIColor *transBlack = [[UIColor blackColor] colorWithAlphaComponent:0.3f];
+    [self.layer setBorderColor: transBlack.CGColor];
+    [self setTitleColor:transBlack forState:UIControlStateSelected];
+    [super touchesBegan:touches withEvent:event];
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
+    // When the button is pressed the border color changes back to black
+    [self.layer setBorderColor:[UIColor blackColor ].CGColor];
+    [self setTitleColor:[UIColor blackColor] forState:UIControlStateSelected];
+    [super touchesEnded:touches withEvent:event];
+}
 
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
