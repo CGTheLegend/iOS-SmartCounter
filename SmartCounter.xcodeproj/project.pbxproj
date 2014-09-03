@@ -130,7 +130,6 @@
 				E0E1431E19B79A9E00A31EE6 /* Model */,
 				E0E1431D19B79A9800A31EE6 /* View */,
 				E0E1431F19B79AAB00A31EE6 /* Controller */,
-				E0DF666919AD217800606BB5 /* Supporting Files */,
 			);
 			path = SmartCounter;
 			sourceTree = "<group>";
@@ -196,6 +195,7 @@
 		E0E1431E19B79A9E00A31EE6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E0DF666919AD217800606BB5 /* Supporting Files */,
 			);
 			name = Model;
 			sourceTree = "<group>";
