@@ -127,11 +127,9 @@
 		E0DF666819AD217800606BB5 /* SmartCounter */ = {
 			isa = PBXGroup;
 			children = (
-				E0DF667419AD217800606BB5 /* Main.storyboard */,
-				E0DF669719AD218800606BB5 /* ViewController */,
-				E07DB6D519AE97C2003C3E13 /* View Controller Data Entry */,
-				E0DF669B19AD236C00606BB5 /* RoundRecButton */,
-				E0DF667A19AD217900606BB5 /* Images.xcassets */,
+				E0E1431E19B79A9E00A31EE6 /* Model */,
+				E0E1431D19B79A9800A31EE6 /* View */,
+				E0E1431F19B79AAB00A31EE6 /* Controller */,
 				E0DF666919AD217800606BB5 /* Supporting Files */,
 			);
 			path = SmartCounter;
@@ -184,6 +182,32 @@
 				E0DF669919AD236700606BB5 /* SmartCounterRoundRecButton.m */,
 			);
 			name = RoundRecButton;
+			sourceTree = "<group>";
+		};
+		E0E1431D19B79A9800A31EE6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF667419AD217800606BB5 /* Main.storyboard */,
+				E0DF667A19AD217900606BB5 /* Images.xcassets */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E0E1431E19B79A9E00A31EE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E0E1431F19B79AAB00A31EE6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E0DF669719AD218800606BB5 /* ViewController */,
+				E07DB6D519AE97C2003C3E13 /* View Controller Data Entry */,
+				E0DF669B19AD236C00606BB5 /* RoundRecButton */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
