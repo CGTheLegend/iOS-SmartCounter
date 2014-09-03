@@ -17,7 +17,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	UIButton *button = [[UIButton alloc]init];
+    button.layer.cornerRadius = 10.0f;
+    button.layer.borderColor = [UIColor blackColor].CGColor;
+    button.layer.borderWidth = 2;
+    button.layer.masksToBounds = YES;
 }
 
 - (void)didReceiveMemoryWarning

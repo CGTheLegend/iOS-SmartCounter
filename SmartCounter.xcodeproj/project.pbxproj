@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E075EA0419AD368800DED03D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0DF667419AD217800606BB5 /* Main.storyboard */; };
+		E07DB6D419AE97BD003C3E13 /* SmartCounterViewControllerDataEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = E07DB6D319AE97BD003C3E13 /* SmartCounterViewControllerDataEntry.m */; };
 		E0DF666319AD217800606BB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DF666219AD217800606BB5 /* Foundation.framework */; };
 		E0DF666519AD217800606BB5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DF666419AD217800606BB5 /* CoreGraphics.framework */; };
 		E0DF666719AD217800606BB5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DF666619AD217800606BB5 /* UIKit.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E07DB6D219AE97BD003C3E13 /* SmartCounterViewControllerDataEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartCounterViewControllerDataEntry.h; sourceTree = "<group>"; };
+		E07DB6D319AE97BD003C3E13 /* SmartCounterViewControllerDataEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartCounterViewControllerDataEntry.m; sourceTree = "<group>"; };
 		E0DF665F19AD217800606BB5 /* SmartCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DF666219AD217800606BB5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E0DF666419AD217800606BB5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -82,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E07DB6D519AE97C2003C3E13 /* View Controller Data Entry */ = {
+			isa = PBXGroup;
+			children = (
+				E07DB6D219AE97BD003C3E13 /* SmartCounterViewControllerDataEntry.h */,
+				E07DB6D319AE97BD003C3E13 /* SmartCounterViewControllerDataEntry.m */,
+			);
+			name = "View Controller Data Entry";
+			sourceTree = "<group>";
+		};
 		E0DF665619AD217800606BB5 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +129,7 @@
 			children = (
 				E0DF667419AD217800606BB5 /* Main.storyboard */,
 				E0DF669719AD218800606BB5 /* ViewController */,
+				E07DB6D519AE97C2003C3E13 /* View Controller Data Entry */,
 				E0DF669B19AD236C00606BB5 /* RoundRecButton */,
 				E0DF667A19AD217900606BB5 /* Images.xcassets */,
 				E0DF666919AD217800606BB5 /* Supporting Files */,
@@ -277,6 +290,7 @@
 				E0DF669A19AD236700606BB5 /* SmartCounterRoundRecButton.m in Sources */,
 				E0DF667919AD217900606BB5 /* SmartCounterViewController.m in Sources */,
 				E0DF666F19AD217800606BB5 /* main.m in Sources */,
+				E07DB6D419AE97BD003C3E13 /* SmartCounterViewControllerDataEntry.m in Sources */,
 				E0DF667319AD217800606BB5 /* SmartCounterAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
