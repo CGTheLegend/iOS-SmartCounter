@@ -1,53 +1,37 @@
 //
-//  SmartCounterViewControllerDataEntry.m
+//  SmartCounterDaysFromViewController.m
 //  SmartCounter
 //
-//  Created by Cristian Gonzalez on 8/27/14.
+//  Created by Cristian Gonzalez on 9/4/14.
 //  Copyright (c) 2014 Cristian F. Gonzalez. All rights reserved.
 //
 
-#import "SmartCounterViewControllerDataEntry.h"
+#import "SmartCounterDaysFromViewController.h"
 
-@interface SmartCounterViewControllerDataEntry ()
+@interface SmartCounterDaysFromViewController ()
 
 @end
 
-@implementation SmartCounterViewControllerDataEntry
+@implementation SmartCounterDaysFromViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad{
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.DaysFromTextView.delegate = self;
-    self.DaysFromTextView.delegate = self;
-    self.ManualCounterTextView.delegate = self;
+    self.daysFromTextField.delegate = self;
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-    [self.DaysUntilTextView resignFirstResponder];
-    [self.DaysFromTextView resignFirstResponder];
-    [self.ManualCounterTextView resignFirstResponder];
+    [self.daysFromTextField resignFirstResponder];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{
     if(textField){
         [textField resignFirstResponder];
     }
-    
     return NO;
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

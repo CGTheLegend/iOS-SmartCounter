@@ -43,7 +43,7 @@
         <!--Days Until Data Entry - View Controller-->
         <scene sceneID="m85-dV-kGF">
             <objects>
-                <viewController id="sLy-H5-jEp" userLabel="Days Until Data Entry - View Controller" customClass="SmartCounterViewControllerDataEntry" sceneMemberID="viewController">
+                <viewController id="sLy-H5-jEp" userLabel="Days Until Data Entry - View Controller" customClass="SmartCounterDaysUntilViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oDX-kq-rMg"/>
                         <viewControllerLayoutGuide type="bottom" id="b5X-OH-A4x"/>
@@ -92,6 +92,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     <navigationItem key="navigationItem" title="Days Until . . ." id="VTo-vZ-TkU">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="RGj-As-kMm"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="daysUntilTextField" destination="Ueb-Rj-qp0" id="nQi-Lz-mg3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MWw-1z-pVs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -154,7 +157,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <!--Days From Data Entry - View Controller-->
         <scene sceneID="7pz-Vj-X72">
             <objects>
-                <viewController id="6Op-h0-F4W" userLabel="Days From Data Entry - View Controller" customClass="SmartCounterViewControllerDataEntry" sceneMemberID="viewController">
+                <viewController id="6Op-h0-F4W" userLabel="Days From Data Entry - View Controller" customClass="SmartCounterDaysFromViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KMP-rf-xi2"/>
                         <viewControllerLayoutGuide type="bottom" id="SRB-lB-8vX"/>
@@ -204,7 +207,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="txW-lq-paF"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="DaysFromTextView" destination="QSK-Xg-FfD" id="d7h-2B-YST"/>
+                        <outlet property="daysFromTextField" destination="QSK-Xg-FfD" id="OXk-Tn-FUS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4xh-a7-ZXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -214,7 +217,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <!--Manual Data Entry - View Controller-->
         <scene sceneID="Hqv-sN-8fA">
             <objects>
-                <viewController id="mtq-HX-3WG" userLabel="Manual Data Entry - View Controller" customClass="SmartCounterViewControllerDataEntry" sceneMemberID="viewController">
+                <viewController id="mtq-HX-3WG" userLabel="Manual Data Entry - View Controller" customClass="SmartCounterManualCounterViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UYV-q1-82q"/>
                         <viewControllerLayoutGuide type="bottom" id="Fcd-dJ-eTS"/>
@@ -236,7 +239,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="aeP-Vm-JUt"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="ManualCounterTextView" destination="gFH-Rr-9Ee" id="9Di-fB-Gg1"/>
+                        <outlet property="manualCounterTextField" destination="gFH-Rr-9Ee" id="1lr-ok-FQW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e3W-Qc-4tv" userLabel="First Responder" sceneMemberID="firstResponder"/>
