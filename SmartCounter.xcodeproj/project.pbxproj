@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E04855F319C782CD008C355D /* SmartCounterDaysFrom.m in Sources */ = {isa = PBXBuildFile; fileRef = E04855EC19C782CD008C355D /* SmartCounterDaysFrom.m */; };
+		E04855F419C782CD008C355D /* SmartCounterDaysUntil.m in Sources */ = {isa = PBXBuildFile; fileRef = E04855EE19C782CD008C355D /* SmartCounterDaysUntil.m */; };
+		E04855F519C782CD008C355D /* SmartCounterManualCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = E04855F019C782CD008C355D /* SmartCounterManualCounter.m */; };
+		E04855F619C782CD008C355D /* SmartCounterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E04855F219C782CD008C355D /* SmartCounterTableViewController.m */; };
 		E075EA0419AD368800DED03D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0DF667419AD217800606BB5 /* Main.storyboard */; };
 		E08BC89419B8D5BE005D8966 /* SmartCounterDaysUntilViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E08BC89319B8D5BE005D8966 /* SmartCounterDaysUntilViewController.m */; };
 		E08BC89719B8D5C6005D8966 /* SmartCounterDaysFromViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E08BC89619B8D5C6005D8966 /* SmartCounterDaysFromViewController.m */; };
@@ -38,6 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E04855EB19C782CD008C355D /* SmartCounterDaysFrom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SmartCounterDaysFrom.h; path = SmartCounter/SmartCounterDaysFrom.h; sourceTree = "<group>"; };
+		E04855EC19C782CD008C355D /* SmartCounterDaysFrom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SmartCounterDaysFrom.m; path = SmartCounter/SmartCounterDaysFrom.m; sourceTree = "<group>"; };
+		E04855ED19C782CD008C355D /* SmartCounterDaysUntil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SmartCounterDaysUntil.h; path = SmartCounter/SmartCounterDaysUntil.h; sourceTree = "<group>"; };
+		E04855EE19C782CD008C355D /* SmartCounterDaysUntil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SmartCounterDaysUntil.m; path = SmartCounter/SmartCounterDaysUntil.m; sourceTree = "<group>"; };
+		E04855EF19C782CD008C355D /* SmartCounterManualCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SmartCounterManualCounter.h; path = SmartCounter/SmartCounterManualCounter.h; sourceTree = "<group>"; };
+		E04855F019C782CD008C355D /* SmartCounterManualCounter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SmartCounterManualCounter.m; path = SmartCounter/SmartCounterManualCounter.m; sourceTree = "<group>"; };
+		E04855F119C782CD008C355D /* SmartCounterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SmartCounterTableViewController.h; path = SmartCounter/SmartCounterTableViewController.h; sourceTree = "<group>"; };
+		E04855F219C782CD008C355D /* SmartCounterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SmartCounterTableViewController.m; path = SmartCounter/SmartCounterTableViewController.m; sourceTree = "<group>"; };
 		E08BC89219B8D5BE005D8966 /* SmartCounterDaysUntilViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartCounterDaysUntilViewController.h; sourceTree = "<group>"; };
 		E08BC89319B8D5BE005D8966 /* SmartCounterDaysUntilViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartCounterDaysUntilViewController.m; sourceTree = "<group>"; };
 		E08BC89519B8D5C6005D8966 /* SmartCounterDaysFromViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartCounterDaysFromViewController.h; sourceTree = "<group>"; };
@@ -91,6 +103,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E04855F719C782DF008C355D /* Days From */ = {
+			isa = PBXGroup;
+			children = (
+				E04855EB19C782CD008C355D /* SmartCounterDaysFrom.h */,
+				E04855EC19C782CD008C355D /* SmartCounterDaysFrom.m */,
+			);
+			name = "Days From";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		E04855F819C782E9008C355D /* Days Until */ = {
+			isa = PBXGroup;
+			children = (
+				E04855ED19C782CD008C355D /* SmartCounterDaysUntil.h */,
+				E04855EE19C782CD008C355D /* SmartCounterDaysUntil.m */,
+			);
+			name = "Days Until";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		E04855F919C782F3008C355D /* Manual Counter */ = {
+			isa = PBXGroup;
+			children = (
+				E04855EF19C782CD008C355D /* SmartCounterManualCounter.h */,
+				E04855F019C782CD008C355D /* SmartCounterManualCounter.m */,
+			);
+			name = "Manual Counter";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		E04855FA19C782FD008C355D /* Table View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E04855F119C782CD008C355D /* SmartCounterTableViewController.h */,
+				E04855F219C782CD008C355D /* SmartCounterTableViewController.m */,
+			);
+			name = "Table View Controller";
+			path = ..;
+			sourceTree = "<group>";
+		};
 		E07DB6D519AE97C2003C3E13 /* View Controller Data Entry */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +281,9 @@
 		E0E1431E19B79A9E00A31EE6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E04855F719C782DF008C355D /* Days From */,
+				E04855F819C782E9008C355D /* Days Until */,
+				E04855F919C782F3008C355D /* Manual Counter */,
 				E0DF669B19AD236C00606BB5 /* RoundRecButton */,
 				E0DF666919AD217800606BB5 /* Supporting Files */,
 			);
@@ -238,6 +293,7 @@
 		E0E1431F19B79AAB00A31EE6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E04855FA19C782FD008C355D /* Table View Controller */,
 				E0DF669719AD218800606BB5 /* ViewController */,
 				E07DB6D519AE97C2003C3E13 /* View Controller Data Entry */,
 			);
@@ -346,10 +402,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E08BC89A19B8D5CE005D8966 /* SmartCounterManualCounterViewController.m in Sources */,
+				E04855F519C782CD008C355D /* SmartCounterManualCounter.m in Sources */,
 				E0DF669A19AD236700606BB5 /* SmartCounterRoundRecButton.m in Sources */,
+				E04855F419C782CD008C355D /* SmartCounterDaysUntil.m in Sources */,
 				E0DF667919AD217900606BB5 /* SmartCounterViewController.m in Sources */,
 				E0DF666F19AD217800606BB5 /* main.m in Sources */,
 				E08BC89719B8D5C6005D8966 /* SmartCounterDaysFromViewController.m in Sources */,
+				E04855F619C782CD008C355D /* SmartCounterTableViewController.m in Sources */,
+				E04855F319C782CD008C355D /* SmartCounterDaysFrom.m in Sources */,
 				E0DF667319AD217800606BB5 /* SmartCounterAppDelegate.m in Sources */,
 				E08BC89419B8D5BE005D8966 /* SmartCounterDaysUntilViewController.m in Sources */,
 			);
